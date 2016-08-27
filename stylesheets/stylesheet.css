@@ -937,3 +937,8 @@ pre code {
 #main-content h2 {
   font-size: 1.6em;
 }
+.task {
+  border: dashed 3px #ccc;
+  padding: 1rem 2rem 1rem 5rem;
+  margin-bottom: 1rem;
+}
