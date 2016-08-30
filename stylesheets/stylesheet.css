@@ -957,3 +957,6 @@ pre code {
 .accent, .accent .hljs-meta {
   color: blueviolet;
 }
+figcaption {
+  font-size: 13px;
+}

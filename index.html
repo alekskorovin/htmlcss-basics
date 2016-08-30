@@ -411,6 +411,53 @@
 &lt;/html&gt;</code></pre>
                 <p>Результат должен выглядеть так:</p>
                 <img src="images/emphasis.png" alt="Значимый текст выделен" />
+                <h4>Заголовки</h4>
+                <figure style="width: 50%; float: right; margin-left: 2rem;">
+                    <img src="images/headings.png" alt="Заголовки"  />
+                    <figcaption>Планета чудес и загадок. Перевод с английского Strange Worlds Amazing Places &mdash; Отпечатано в Германии.: ЗАО &raquo;Издательский Дом Ридерз Дайджест&laquo;, 2006. Стр. 398.</figcaption>
+                </figure>
+
+                <p>В документах или книге можно встретить заголовки и подзаголовки различных видов. Для создания заголовков и различных подзаголовков в HTML есть специальные теги.</p>
+                <p>Эти теги: <b>h1</b>, <b>h2</b>, <b>h3</b>, <b>h4</b>, <b>h5</b>, <b>h6</b> &mdash; от самого главного (<b>h1</b>) к наименее значительному (<b>h6</b>).</p>
+                <blockquote>
+                    <b>Синтаксис:</b>
+                    <strong>&lt;h1&gt;</strong>основной_заголовок<strong>&lt;/h1&gt;</strong><br />
+                    <strong>&lt;h2&gt;</strong>подзаголовок<strong>&lt;/h2&gt;</strong><br />
+                    <strong>&lt;h3&gt;</strong>вспомогательный<br />_подзаголовок<strong>&lt;/h3&gt;</strong>
+                </blockquote>
+                <p>
+                    Добавим заголовок и подзаголовки к нашему примеру. Заменим первый абзац на заголовок первого уровня и добавим дополнительные подзаголовки и еще один абзац:
+                </p>
+<pre><code class="html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Моя первая веб-страница&lt;/title&gt;
+&lt;/head&gt;</span>
+&lt;body&gt;
+    <span class="mark">&lt;h1&gt;</span>Привет Мир!<span class="mark">&lt;/h1&gt;</span>
+    <span class="mark">&lt;h2&gt;Вот что мне нравится&lt;/h2&gt;</span>
+    <span class="mark">&lt;h3&gt;Любимый цвет&lt;/h3&gt;</span>
+    &lt;p&gt;Мой любимый цвет &lt;strong&gt;зеленый&lt;/strong&gt; (&lt;em&gt;green&lt;/em&gt;).&lt;/p&gt;
+    <span class="mark">&lt;h3&gt;Любимый язык разметки&lt;/h3&gt;</span>
+    <span class="mark">&lt;p&gt;Мой любимый язык для разметки это HTML!&lt;/p&gt;</span>
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p>Результат который должен получиться:</p>
+                <img src="images/headings-in-web-page.png" alt="Заголовки и подзаголовки в веб-странице" />
+                <p>Браузер уже применил к заголовкам стили по умолчанию, поэтому они отличаются от текста в абзацах (изменился размер букв и рассотяние между строками). В дальнейшем эти стили можно будет изменить.</p>
+                <blockquote>
+                    <b>Особенность</b>
+                    Основной заголовок <strong>h1</strong> должен указываться на странице либо внутри семантического тега обозначающего статью один раз. Подзаговолков (<strong>h2-h6</strong>) может быть несколько.
+                </blockquote>
+                <img src="images/headings-hierarchy.png" alt="Правильная иерархия заголовков" style="float: right; width: 60%; margin-left: 2rem;" />
+                <p>
+                    В веб-документе должна сохраняться иерархия заголовков &mdash; первым идёт <b>h1</b> за ним <b>h2</b>, за <b>h2</b> идёт <b>h3</b> и т.д.
+                    Следующий <b>h2</b> может идти за <b>h3</b>, но не стоит ставить первый <b>h3</b> перед <b>h2</b>.
+                </p>
+                <p>
+                    Заголовки и подзаголовки влияют на ранжирование (рейтинг) в поисковых системах, поэтому стоит уделять внимание правильной иерархии заголовков и подзаголовков.
+                </p>
+
             <!--
             <article>
 
