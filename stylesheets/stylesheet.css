@@ -948,6 +948,12 @@ pre code {
 #main-content h4 {
   font-size: 20px;
 }
+#main-content h5 {
+  font-size: 18px;
+}
 .mark, .mark .hljs-meta {
   color: forestgreen;
+}
+.accent, .accent .hljs-meta {
+  color: blueviolet;
 }
