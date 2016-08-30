@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="065e91aa-ea7c-46df-8b4a-ba54b7fcb974" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/stylesheet.css" afterPath="$PROJECT_DIR$/stylesheets/stylesheet.css" />
     </list>
     <ignored path="htmlcss.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.33333334">
-              <caret line="446" column="167" selection-start-line="446" selection-start-column="167" selection-end-line="446" selection-end-column="167" />
+              <caret line="195" column="60" selection-start-line="195" selection-start-column="60" selection-end-line="195" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#figure#0;n#article#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#figure#1;n#article#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -588,7 +587,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
-          <caret line="446" column="167" selection-start-line="446" selection-start-column="167" selection-end-line="446" selection-end-column="167" />
+          <caret line="195" column="60" selection-start-line="195" selection-start-column="60" selection-end-line="195" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#div#0;n#figure#0;n#article#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#figure#1;n#article#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
