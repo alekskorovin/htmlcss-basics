@@ -467,10 +467,112 @@
                     <li>список определений (<b>d</b>efinition <b>l</b>ist) &mdash; менее распространенный, но довольно удобный вид списков, обозначаемый тегом <b>dl</b></li>
                 </ul>
                 <a href="http://zurb.com/sitemap"><img src="images/sitemap.png" alt="Пример карты сайта" style="width: 40%; float: right; margin-left: 2rem;" /></a>
-                <p>Внутренние элементы списков <b>ul</b> и <b>ol</b> обозначаются тегом <b>li</b>.</p>
+                <p>Внутренние элементы списков <b>ul</b> и <b>ol</b> обозначаются тегом <b>li</b> (<b>l</b>ist <b>i</b>tem &mdash; элемент списка).</p>
                 <p>Каждый внутренний элемент списка может содержать в себе список в котором в свою очередь есть элементы списка.<br /> Таким образом можно формировать вложенные структуры, которые могут использоваться например в картах сайта.</p>
                 <p>Подобным образом делается и навигационное меню с разным уровнем вложенности.</p>
-
+                <h5>Элемент ul</h5>
+                <figure style="width: 40%; float: right; margin-left: 2rem;">
+                    <img src="images/book-ul.png" alt="Неупорядоченный список"  />
+                    <figcaption>Планета чудес и загадок. Перевод с английского Strange Worlds Amazing Places &mdash; Отпечатано в Германии.: ЗАО &raquo;Издательский Дом Ридерз Дайджест&laquo;, 2006. Стр. 428.</figcaption>
+                </figure>
+                <p>Пример неупорядоченного списка:</p>
+                <blockquote>
+                    <b>Синтаксис:</b>
+                    <strong>&lt;ul&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;li&gt;</strong>первый_элемент_списка<strong>&lt;/li&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;li&gt;</strong>второй_элемент_списка<strong>&lt;/li&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;li&gt;</strong>третий_элемент_списка<strong>&lt;/li&gt;</strong><br />
+                    <strong>&lt;/ul&gt;</strong>
+                </blockquote>
+                <p>Вложенные списки выглядят следующим образом:</p>
+                <blockquote>
+                    <b>Синтаксис:</b>
+                    <strong>&lt;ul&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;li&gt;</strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;первый_элемент_списка<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;ul&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;li&gt;</strong>элемент_списка<strong>&lt;/li&gt;</strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/ul&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/li&gt;</strong><br />
+                    <strong>&lt;/ul&gt;</strong>
+                </blockquote>
+                <h5>Элемент ol</h5>
+                <figure style="width: 43%; float: right; margin-left: 1rem;">
+                    <img src="images/book-ol.png" alt="Упорядоченный список"  />
+                    <figcaption>Планета чудес и загадок. Перевод с английского Strange Worlds Amazing Places &mdash; Отпечатано в Германии.: ЗАО &raquo;Издательский Дом Ридерз Дайджест&laquo;, 2006. Стр. 10.</figcaption>
+                </figure>
+                <p>Пример упорядоченного списка (с номерами):</p>
+                <blockquote>
+                    <b>Синтаксис используется такой же как и для ul:</b>
+                    <strong>&lt;ol&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;li&gt;</strong>первый_элемент_списка<strong>&lt;/li&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;li&gt;</strong>второй_элемент_списка<strong>&lt;/li&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;li&gt;</strong>третий_элемент_списка<strong>&lt;/li&gt;</strong><br />
+                    <strong>&lt;/ol&gt;</strong>
+                </blockquote>
+                <p>Списки можно комбинировать:</p>
+                <blockquote>
+                    <b>Синтаксис:</b>
+                    <strong>&lt;ol&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;li&gt;</strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;первый_элемент_списка<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;ul&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;li&gt;</strong>элемент_списка<strong>&lt;/li&gt;</strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/ul&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/li&gt;</strong><br />
+                    <strong>&lt;/ol&gt;</strong>
+                </blockquote>
+                <h5>Элемент dl</h5>
+                <p>
+                    Элемент <b>dl</b> похож на <b>ul</b> и <b>ol</b>, тем что содержит в себе элементы списка. <br />Исключением является то, что вместо одного внутреннего элемента
+                    <b>li</b> используется пара элементов:
+                </p>
+                <figure style="width: 33%; float: right; margin-left: 2rem;">
+                    <img src="images/book-dl.png" alt="Список определений"  />
+                    <figcaption><b>Брем А.</b> Жизнь животных / Альфред Брем. &mdash; М.: Эксмо, 2009. Стр. 959.</figcaption>
+                </figure>
+                <ul>
+                    <li>термин определения <b>dt</b> (<b>d</b>efinition <b>t</b>erm)</li>
+                    <li>описание определения <b>dd</b> (<b>d</b>efinition <b>d</b>escription)</li>
+                </ul>
+                <p>Пример списка определений:</p>
+                <blockquote>
+                    <b>Синтаксис:</b>
+                    <strong>&lt;dl&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;dt&gt;</strong>первый_термин<strong>&lt;/dt&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;dd&gt;</strong>описание_первого_термина<strong>&lt;/dd&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;dt&gt;</strong>второй_термин<strong>&lt;/dt&gt;</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;dd&gt;</strong>описание_второго_термина<strong>&lt;/dd&gt;</strong><br />
+                    <strong>&lt;/dl&gt;</strong>
+                </blockquote>
+                <p>Давайте добавим в нашу страницу списки:</p>
+<pre><code class="html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Моя первая веб-страница&lt;/title&gt;
+&lt;/head&gt;</span>
+&lt;body&gt;
+    &lt;h1&gt;Привет Мир!&lt;/h1&gt;
+    &lt;h2&gt;Вот что мне нравится&lt;/h2&gt;
+    &lt;h3&gt;Любимый цвет&lt;/h3&gt;
+    &lt;p&gt;Мой любимый цвет &lt;strong&gt;зеленый&lt;/strong&gt; (&lt;em&gt;green&lt;/em&gt;).&lt;/p&gt;
+    &lt;h3&gt;Любимый язык разметки&lt;/h3&gt;
+    &lt;p&gt;Мой любимый язык для разметки это HTML!&lt;/p&gt;
+    <span class="mark">&lt;h3&gt;Мне нравится изучать&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Язык разметки HTML&lt;/li&gt;
+        &lt;li&gt;Каскадные таблицы стилей CSS&lt;/li&gt;
+        &lt;li&gt;Язык программирования JavaScript&lt;/li&gt;
+    &lt;/ul&gt;</span>
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <h3>Задание</h3>
+                <ul>
+                    <li>В конце страницы Необходимо добавить заголовок "Мои приоритеты по изучению".</li>
+                    <li>После заголовка добавить упорядоченный (нумерованный) список, где будет указана личная приоритетность изучения этих технологий.</li>
+                </ul>
+                <p>Результат должен выглядеть примерно так:</p>
+                <img src="images/webpage-lists.png" alt="Веб-страница с добавленными списками" />
             <!--
             <article>
 
