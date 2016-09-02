@@ -575,6 +575,43 @@
                 </div>
                 <p>Результат должен выглядеть примерно так:</p>
                 <img src="images/webpage-lists.png" alt="Веб-страница с добавленными списками" />
+                <h4>Ссылки</h4>
+                <p>
+                    До этого момента мы создавали отдельную веб-страницу со своей структурой, однако Интернет отличается именно тем, что объединяет собой все ссылки.
+                </p>
+                <p>В термине <b>HTML</b> две первые буквы <b>H</b> и <b>T</b> (<b>H</b>yper <b>T</b>ext) обозначают Гипер Текст, что по сути представляет собой систему со ссылками в тексте.</p>
+                <p>Давайте разместим на нашей веб-странице свою первую ссылку. Мы можем сделать любой из элементов ссылкой. Давайте сделаем ссылкой на адрес <b>https://www.w3.org/html/</b> текст "Язык разметки HTML":</p>
+<pre><code class="html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Моя первая веб-страница&lt;/title&gt;
+&lt;/head&gt;</span>
+&lt;body&gt;
+    &lt;h1&gt;Привет Мир!&lt;/h1&gt;
+    &lt;h2&gt;Вот что мне нравится&lt;/h2&gt;
+    &lt;h3&gt;Любимый цвет&lt;/h3&gt;
+    &lt;p&gt;Мой любимый цвет &lt;strong&gt;зеленый&lt;/strong&gt; (&lt;em&gt;green&lt;/em&gt;).&lt;/p&gt;
+    &lt;h3&gt;Любимый язык разметки&lt;/h3&gt;
+    &lt;p&gt;Мой любимый язык для разметки это HTML!&lt;/p&gt;
+    &lt;h3&gt;Мне нравится изучать&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;<span class="mark">&lt;a href="https://www.w3.org/html/"&gt;</span>Язык разметки HTML<span class="mark">&lt;/a&gt;</span>&lt;/li&gt;
+        &lt;li&gt;Каскадные таблицы стилей CSS&lt;/li&gt;
+        &lt;li&gt;Язык программирования JavaScript&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;Мои приоритеты по изучению&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;JavaScript&lt;/li&gt;
+        &lt;li&gt;CSS3&lt;/li&gt;
+        &lt;li&gt;HTML5&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p>Направление ссылки задается в значении атрибута <b>href</b>. Это может быть абсолютная ссылка (в формате "http://google.com"):</p>
+                <pre><code class="html">&lt;a href="http://google.com"&gt;абсолютная ссылка на Google&lt;/a&gt;</code></pre>
+                <p>либо относительная (когда приводится не полный URL а его часть, при этом открывается адрес относительно нашей страницы).</p>
+                <p>К примеру, если у нас есть вторая страница "web-page-2.html", которая находится в той же папке, что и наша основная страница, то добавление ссылки на вторую страницу будет выглядеть так:</p>
+                <pre><code class="html">&lt;a href="web-page-2.html"&gt;относительная ссылка на вторую страницу&lt;/a&gt;</code></pre>
             <!--
             <article>
 
