@@ -960,3 +960,6 @@ pre code {
 figcaption {
   font-size: 13px;
 }
+.required {
+  color: #404080;
+}
