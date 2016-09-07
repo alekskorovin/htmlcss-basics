@@ -686,776 +686,166 @@
                 <li><b>SVG</b> (произносится "as-vi-ji") &mdash; векторное изображение не теряющее качество при масштабировании (представляет собой текстовый XML-файл).</li>
                 <li><b>GIF</b> (произносится как “jif”) &mdash; растровые изображения с поддержкой пикселей с полной прозрачностью. Поддерживает палитру из 256 цветов. Может содержать покадровую анимацию.</li>
             </ul>
-            <!--
-            <article>
-
-            <h2><a id="history" class="anchor" href="#history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>История развития веб технологий</h2>
+        </section>
+        <section>
+            <h2>CSS</h2>
             <p>
-              <a href="http://www.evolutionoftheweb.com/?hl=ru" target="_blank"><img src="images/history.png" /></a>
+                <b>CSS</b> &mdash; <b>C</b>ascading <b>S</b>tyle <b>S</b>heets (каскадные таблицы стилей) это <b>язык описания внешнего вида</b> документа, написанного с использованием языка разметки.
             </p>
-
-            <h3><a id="facts" class="anchor" href="#facts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Кратко несколько фактов</h3>
+            <p>В основном CSS используется для задания внешнего вида веб-страниц, но так же может применяться к любым XML-документам, таким как SVG или XUL.</p>
+            <p>CSS это список стилей, применяемых к тегам и влияющий на то как будет отображаться контент.</p>
+            <p>Целью разработки CSS было отделение внешнего вида (CSS) от логической структуры (то что задает HTML). Такое разделение внешнего вида и логической структуры дало:</p>
+            <img src="images/CSS-shade.svg" alt="CSS" style="float: right; width: 30%; margin-right: 2rem;" />
             <ul>
-              <li>В <b>2004-м</b> году был представлен элемент canvas для компонента Mac OS X WebKit</li>
-              <li>В <b>2006-м</b> был опубликован 1-й черновик HTML5 (анимация в HTML5 canvas)</li>
-              <li>В <b>2009-м</b> году 20-го марта был опубликован первый публичный черновик по технологии CSS Transitions и CSS Animations</li>
-              <li>До <b>апреля 2010-го</b> года в вебе был распространен <b>Flash</b>. После выпуска компанией Apple первой версии планшета iPad и презентации все поменялось. Стив Джобс заявил что Flash как технология изжила себя из-за проблем с производительностью на мобильных устройствах. После этого начался рост использования HTML5 и CSS3 для анимаций.</li>
+                <li>большую доступность документа</li>
+                <li>большую гибкость</li>
+                <li>возможность управления внешним видом</li>
+                <li>уменьшение сложности в поддержке веб-страниц</li>
             </ul>
-            </article>
-            <article>
-            <h2><a id="appears" class="anchor" href="#appears" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Появление технологий CSS анимаций в браузерах</h2>
-            <h3><a id="appears-transitions" class="anchor" href="#appears-transitions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CSS Transitions</h3>
-            <img style="float: right;" src="images/browsers-ie.png" />
-            <dl>
-              <dt><a href="https://en.wikipedia.org/wiki/Safari_version_history">Safari 3.1</a></dt>
-              <dd>18 марта 2008</dd>
-              <dt><a href="https://en.wikipedia.org/wiki/Google_Chrome_release_history">Chrome 1.0</a></dt>
-              <dd>2 сентября 2008</dd>
-              <dt><a href="http://www.opera.com/docs/changelogs/windows/1050/">Opera 10.5</a></dt>
-              <dd>2 марта 2010</dd>
-              <dt><a href="http://website-archive.mozilla.org/www.mozilla.org/firefox_releasenotes/en-US/firefox/4.0/releasenotes/">Firefox 4</a></dt>
-              <dd>22 марта 2011</dd>
-              <dt><a href="https://msdn.microsoft.com/en-us/library/hh673549(v=vs.85).aspx">Internet Explorer 10</a></dt>
-              <dd>13 сентября 2011</dd>
-            </dl>
 
-            <h3><a id="appears-animations" class="anchor" href="#appears-animations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CSS Animations</h3>
-            <dl>
-              <dt><a href="https://en.wikipedia.org/wiki/Safari_version_history">Safari 4.0</a></dt>
-              <dd>11 июня 2008</dd>
-              <dt><a href="https://en.wikipedia.org/wiki/Google_Chrome_release_history">Chrome 1.0</a></dt>
-              <dd>2 сентября 2008</dd>
-              <dt><a href="http://website-archive.mozilla.org/www.mozilla.org/firefox_releasenotes/en-US/firefox/5.0/releasenotes/">Firefox 5</a></dt>
-              <dd>20 апреля 2011</dd>
-              <dt><a href="https://msdn.microsoft.com/en-us/library/hh673549(v=vs.85).aspx">Internet Explorer 10</a></dt>
-              <dd>13 сентября 2011</dd>
-              <dt><a href="http://www.opera.com/docs/specs/presto2.10/">Opera Presto 2.10</a></dt>
-              <dd>23 апреля 2012</dd>
-            </dl>
-              <div style="float: left;">
-              <h3><a id="appears-2d-transfrom" class="anchor" href="#appears-2d-transfrom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CSS 2D Transformations</h3>
-              <dl>
-                <dt><a href="https://en.wikipedia.org/wiki/Google_Chrome_release_history">Chrome 1.0</a></dt>
-                <dd>2 сентября 2008</dd>
-                <dt><a href="https://en.wikipedia.org/wiki/Safari_version_history">Safari 3.2</a></dt>
-                <dd>13 ноября 2008</dd>
-                <dt><a href="http://website-archive.mozilla.org/www.mozilla.org/firefox_releasenotes/en-US/firefox/3.5/releasenotes/">Firefox 3.5</a></dt>
-                <dd>30 июня 2009</dd>
-                <dt><a href="http://www.opera.com/docs/changelogs/windows/1050/">Opera 10.5</a></dt>
-                <dd>2 марта 2010</dd>
-                <dt><a href="https://msdn.microsoft.com/en-us/library/hh393506#_CSS3_2D_Transforms">Internet Explorer 9</a></dt>
-                <dd>28 октября 2010</dd>
-              </dl>
-              </div>
-              <div style="float: right;">
-                <h3><a id="appears-3d-transfrom" class="anchor" href="#appears-3d-transfrom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CSS 3D Transformations</h3>
-                <dl>
-                  <dt><a href="https://en.wikipedia.org/wiki/Safari_version_history">Safari 4.0</a></dt>
-                  <dd>11 июня 2008</dd>
-                  <dt><a href="https://en.wikipedia.org/wiki/Google_Chrome_release_history">Chrome 12</a></dt>
-                  <dd>7 июня 2011</dd>
-                  <dt><a href="https://msdn.microsoft.com/en-us/library/hh673529(v=vs.85).aspx">Internet Explorer 10</a></dt>
-                  <dd>13 сентября 2011</dd>
-                  <dt><a href="https://hacks.mozilla.org/2011/10/css-3d-transformations-in-firefox-nightly">Firefox Nightly build</a></dt>
-                  <dd>26 октября 2011</dd>
-                </dl>
-              </div>
-
-            </article>
-
-            <article>
-              <h2><a id="animation-types" class="anchor" href="#animation-types" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Виды анимаций в вебе</h2>
-              <ul>
-                <li>устаревший Flash</li>
-                <li>JavaScript-анимация
-
-                  <p>Наиболее популярные библиотеки работающие с анимацией в HTML:</p>
-                  <ul>
-                    <li><a href="http://api.jquery.com/animate/">jQuery</a></li>
-                    <li><a href="http://greensock.com/tweenlite">GreenSock</a></li>
-                  </ul>
-                  <p>Работа с HTML5 canvas и SVG</p>
-                  <ul>
-                    <li><a href="https://d3js.org/">d3.js</a></li>
-                  </ul>
-                </li>
-                <li>SVG-анимация SMIL, уже считается устаревшей</li>
-                <li>CSS3 анимация (технологии Transitions, Animation, Web Animation - еще в разработке)</li>
-              </ul>
-            </article>
-            <article>
-              <h2><a id="animation-why" class="anchor" href="#animation-why" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Необходимость анимации в вебе</h2>
-              <ul>
-                <li class="animate">Для оживления страницы, добавления интереса к тексту</li>
-                <li class="animate ">Обратная связь, интерактив с элементами страницы</li>
-                <li class="animate">Привлечение внимания при появлении уведомлений</li>
-              </ul>
-            </article>
-            <article>
-              <h2><a id="animation-transitions" class="anchor" href="#animation-transitions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CSS transitions - переходы</h2>
-              <p>Перевод определения <a href="https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md#transition"><dfn title="переходы">transitions</dfn></a></p>
-              <p>
-                <b>CSS transitions</b> &mdash; технология позволяющая контролировать скорость изменения CSS свойств путем задания интервала в течение которого происходит изменение, используя заданную функцию плавности, а так же задавая задержку перед выполнением изменений.
-              </p>
-              <p>
-                Можно анимировать одно либо несколько свойств используя разные параметры (разную длительность, разные функции плавности и задержки).
-              </p>
-              <p>
-                Если не указывать свойство, переход будет применяться ко всем свойствам. Если не указывать функцию плавности будет использована функция плавности по умолчанию. Если не указана задержка, переход будет выполнен без задержек.
-              </p>
-              <h3>CSS свойства, опредяющие переходы (CSS transitions)</h3>
-              <ul class="props">
-                <li><a href="#transition-property">transition-property</a></li>
-                <li><a href="#transition-duration">transition-duration</a></li>
-                <li><a href="#transition-timing-function">transition-timing-function</a></li>
-                <li><a href="#transition-delay">transition-delay</a></li>
-              </ul>
-
-              <h3><a id="transition-property" class="anchor" href="#transition-property" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>transition-property</h3>
-              <p>
-                Используется для задания анимируемого свойста,
-                его значением может быть любое из поддерживаемых свойств перечисленных в <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">списке</a>,
-                 в зависимости от браузеров поддержка анимации тех или иных свойств может различаться.
-              </p>
-              <blockquote>
-                <b>Синтаксис:</b>
-                transition-property: &lt;анимируемое_свойство_элемента&gt;;
-              </blockquote>
-              <pre><code class="css">transition-property: color;</code></pre>
-              <p>Если свойств несколько их перечисляют через запятую.</p>
-              <blockquote>
-                <b>Синтаксис:</b>
-                transition-property: &lt;анимируемое_свойство_элемента_1&gt;, &lt;анимируемое_свойство_элемента_2&gt;, &lt;анимируемое_свойство_элемента_3&gt;;
-              </blockquote>
-              <pre><code class="css">transition-property: left, top, color, background;</code></pre>
-
-              <hr />
-
-              <h3><a id="transition-duration" class="anchor" href="#transition-duration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>transition-duration</h3>
-              <p>
-                Определяет длительность перехода, указывается в секундах!
-              </p>
-              <blockquote>
-                <b>Синтаксис:</b>
-                transition-duration: &lt;длительность_перехода&gt;s;
-              </blockquote>
-              <pre><code class="css">transition-duration: .5s;</code></pre>
-              <pre><code class="css">transition-duration: 0.8s;</code></pre>
-              <pre><code class="css">transition-duration: 2s;</code></pre>
-
-              <div class="error">
-              ошибка:
-              <pre><code class="css">transition-duration: 1;</code></pre>
-              </div>
-              <blockquote>
-                Несколько длительностей перехода как и все остальные свойства указываются через запятую.
-              </blockquote>
-              <pre><code class="css">transition-duration: .5s, .5s, 1s;</code></pre>
-              <blockquote>
-                Если есть несколько свойств а указана одна длительность перехода, она будет применяться ко всем свойствам.
-              </blockquote>
-
-              <hr />
-
-              <h3><a id="transition-timing-function" class="anchor" href="#transition-timing-function" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>transition-timing-function</h3>
-              <p>
-                Определяет функцию плавности выполнения анимации.
-              </p>
-              <p>
-                <a href="http://easings.net/ru">Easing</a> - Функция плавности которая определяет однородность выполнения анимации. Для придания реалистичности, движение делается ускоренным либо замедленным на разных участках течения времени.
-              </p>
-              <p>
-                Большинство функций времени может быть определено графиком соответствующей функции, образующей четырьмя точками кривую Безье.
-              </p>
-              <blockquote>
-                Кривые Безье – самые фундаментальные кривые, применяемые в основном в компьютерной графике и обработке изображений
-              </blockquote>
-              <p><a href="http://cubic-bezier.com/#.17,.67,.83,.67">Сокращенные свойства кривой Безье
-                <img src="images/bezier.png" />
-              </a></p>
-              <blockquote>
-                <b>Синтаксис:</b>
-                transition-timing-function: &lt;функция_плавности&gt;;
-              </blockquote>
-              &lt;функция_плавности&gt; может быть одним из значений приведенных ниже.
-              <ul>
-                <li><b>ease</b> &mdash; то же что и <b>cubic-bezier(0.25, 0.1, 0.25, 1)</b> - ускорение вначале и замедление в конце. Значение по умолчанию.</li>
-                <li><b>linear</b> =  <b>cubic-bezier(0, 0, 1, 1)</b> - без ускорения и замедления</li>
-                <li><b>ease-in</b> =  <b>cubic-bezier(0.42, 0, 1, 1)</b> - замедление в начале и равномерность в конце</li>
-                <li><b>ease-out</b> =  <b>cubic-bezier(0, 0, 0.58, 1)</b> - равномерность в начале и замедление в конце</li>
-                <li><b>ease-in-out</b> =  <b>cubic-bezier(0.42, 0, 0.58, 1)</b> - замедление потом ускорение и замедление в конце</li>
-                <li><b>step-start</b> =  <b>steps(1, start)</b> - при выборе этого значения идет резкое изменение свойств</li>
-                <li><b>step-end</b> =  <b>steps(1, end)</b> - при выборе этого значения идет резкое изменение свойств</li>
-                <li><b>steps(&lt;число_интервалов_в_функции&gt;[, [ start | end ] ])</b> - start и end - указывают точку в которой происходит изменение значения (start - начало, end - конец). При выборе этого значения идет резкое изменение свойств</li>
-                <li><b>cubic-bezier(&lt;координата_x_точки_P1&gt;, &lt;координата_y_точки_P1&gt;, &lt;координата_x_точки_P1&gt;, &lt;координата_y_точки_P2&gt;)</b> - позволяет задавать различные эффекты с ускорением и замедлением. Максимальное значение координаты <b>1</b>, минимальное <b>0</b></li>
-              </ul>
-              <pre><code class="css">transition-timing-function: ease-in-out;</code></pre>
-              <p>
-                <a href="https://www.w3.org/TR/css3-transitions/#transition-timing-function-property">спецификация объясняющая свойство</a>.
-              </p>
-
-              <hr />
-
-              <h3><a id="transition-delay" class="anchor" href="#transition-delay" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>transition-delay</h3>
-              <p>
-                Определяет паузу после которой начинается анимационный переход. Значение задается в секундах!
-              </p>
-              <blockquote>
-                <b>Синтаксис:</b>
-                transition-delay: &lt;длительность_паузы_в_секундах&gt;s;
-              </blockquote>
-              <pre><code class="css">transition-delay: 0.5s;</code></pre>
-
-              <hr />
-
-              <h3><a id="transition-transition" class="anchor" href="#transition-transition" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>transition</h3>
-
-              <p>
-                Наиболее часто используют свойство <b>transition</b> &mdash; это сокращенный вариант записи параметров перехода.
-              </p>
-              <blockquote>
-                <b>Синтаксис:</b>
-                transition: &lt;анимируемое_свойство_элемента&gt; &lt;длительность_перехода&gt; &lt;функция_плавности&gt; &lt;задержка&gt;;
-              </blockquote>
-              <pre><code class="css">transition: all .3s ease-in .1s;</code></pre>
-              <p>
-                В сокращенном варианте записи параметры для разных свойств перечисляются через запятую:
-              </p>
-              <blockquote>
-                <b>Синтаксис:</b>
-                transition: &lt;анимируемое_свойство_элемента_1&gt; &lt;длительность_перехода_1&gt; &lt;функция_плавности_1&gt; &lt;задержка_1&gt;, &lt;анимируемое_свойство_элемента_2&gt; &lt;длительность_перехода_2&gt; &lt;функция_плавности_2&gt; &lt;задержка_2&gt;;
-              </blockquote>
-              <p>
-                Задержка как значение свойства используется довольно редко, поэтому в основном используют первые три параметра. Поэтому в примере 4-й параметр (задержка) опущен.
-              </p>
-              <pre><code class="css">transition: color .5s ease, background 1s ease-in, border-radius 1s ease;</code></pre>
-              <p>Так же необязателен параметр указывающий функцию плавности, если он не указан используется значение <b>ease</b>.</p>
-              <pre><code class="css">transition: color .5s;</code></pre>
-
-              <h3><a href="https://www.w3.org/TR/css3-transitions/">Официальная спецификация по CSS3 Transitions</a></h3>
-            </article>
-            <article>
-              Как реализовывать переходы для эффекта наведения:
-              <ol>
-                <li>
-                  Задаем исходное значение анимируемого свойства
-                  <pre><code class="css">.button {
-    color: #666;
-  }</code></pre>
-                </li>
-                <li>
-                  Добавляем <b>transition</b> указывая <b>color</b> как свойство для анимации и время выполнения:
-                  <pre><code class="css">.button {
-    color: #666;
-    transition: color 0.3s;
-  }</code></pre>
-                </li>
-                <li>
-                  Добавляем псевдоселектор <b>:hover</b> для реализации эффекта наведения, с измененным значением анимированного свойства.
-                   <pre><code class="css">.button {
-    color: #666;
-    transition: color 0.3s;
-  }
-  .button:hover {
+            <p>Для одного и того же документа можно использовать разные стили:</p>
+            <ul>
+                <li>Задавать отдельные стили для печати (где будет скрыт header footer и другие вспомогательные части сайта).</li>
+                <li>Создавать темы &mdash; одна и та же веб-страница выглядеть по разному, можно перекрашивать и в некоторых случаях полностью менять дизайн одного и того же документа (<a href="http://www.csszengarden.com/">CSS Garden</a>).</li>
+                <li>Подключать один и тот же CSS ко всем страница сайта либо страницам раздела, чтобы они выглядели в одном стиле.</li>
+            </ul>
+            <p>CSS, если стили вынесены в отдельный файл, как и HTML, <br /><b>представляет собой обычный текстовый документ</b>.</p>
+            <h3>Подключение CSS</h3>
+            <p>Существует три способа применения CSS к HTML, когда стили:</p>
+            <ul>
+                <li>Строчные</li>
+                <li>Внутренние</li>
+                <li>Внешние</li>
+            </ul>
+            <h4>Строчные (inline)</h4>
+            <p>
+                Строчные стили можно задавать в значении атрибута <b>style</b>:
+            </p>
+            <pre><code class="html">&lt;p <span class="mark">style="color: red;"</span>&gt;красный текст&lt;/p&gt;</code></pre>
+            <p>Добавление этого атрибута со стилем сделает текст конкретного параграфа красным.</p>
+            <p>Но, так как мы знаем что лучшей практикой является отделения разметки от внешнего вида, то <b>необходимо избегать использования этого варианта</b>.</p>
+            <h4>Внутренние (internal)</h4>
+            <p>
+                Внедряемые, или внутренние стили используются для всей страницы. Внутри элемента <b>head</b> добавляется парный тег <b>style</b>, содержащий внутри себя все стили веб-страницы.
+            </p>
+            <p>Вернёмся к нашей странице и добавим стили:</p>
+<pre><code class="html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Моя первая веб-страница&lt;/title&gt;
+    <span class="mark">&lt;style&gt;
+        p {
+            color: green;
+        }
+        a {
+            color: maroon;
+        }
+    &lt;/style&gt;</span>
+&lt;/head&gt;
+...
+</code></pre>
+            <p>
+                Добавленные стили сделают текст параграфов <span style="color: green;">зеленым</span> и раскрасят все ссылки в <span style="color: maroon;">бардовый</span>.
+            </p>
+            <p>Этот способ подключения так же рекомендуется использовать в редких случаях, предпочитая выносить стили в отдельный внешний файл.</p>
+            <h4>Внешние (external)</h4>
+            <p>
+                <b>Внешние стили</b> используются для всего многостраничного сайта. В случае когда используются внешние стили, они выносятся в <b>отдельный текстовый CSS</b> файл (например <b>styles.css</b>), содержимое которого может выглядеть так:
+            </p>
+<pre><code class="css">p {
+    color: green;
+}
+a {
     color: maroon;
-  }</code></pre>
-                </li>
-              </ol>
-              <h4>Как это работает</h4>
-              <p>
-                Браузер находит селектор с заданными свойством <b>transition</b> или под-свойства <b>transition</b> (transition-property, transition-duration, transition-timing-function, transition-delay) и применяет указанные значения переходов при изменении свойств элемента. Чтобы переход работал необходимо чтобы в CSS были заданы начальные и конечные значения свойств.
-              </p>
-              <p>
-                Без использования transitions переход между состояниями будет мгновенный и это обычное состояние элементов без анимации.
-              </p>
-            </article>
-            <article>
-              <h2>Примеры:</h2>
-              <p>
-                Кнопка была черного цвета, при наведении она становится белой. При этом для кнопки изначально задан белый цвет, а в псевдо-селекторе наведения задан черный.
-              </p>
-              <iframe height='265' scrolling='no' src='//codepen.io/alekskorovin/embed/xOykEN/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/xOykEN/'>xOykEN</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-              <hr />
-              <p>
-                Изображения плавно появляются по мере загрузки. Изначально задается полная прозрачность для загружаемых изображений, после события загрузки для загруженного изображения проставляется класс, содержащий значение непрозрачности 100%, opacity: 1;
-              </p>
-              <iframe height='465' scrolling='no' src='//codepen.io/alekskorovin/embed/QEkyok/?height=465&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/QEkyok/'>QEkyok</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-              <hr />
-              <p>
-                Панель закрепленная вверху страницы при клике на стрелочку, панель выезжает сверху вниз. Изначально задается свойство max-height со значением 0, при клике на стрелочку мы добавляем дополнительный CSS-класс, который переопределяет значение max-height для элемента.
-              </p>
-              <iframe height='442' scrolling='no' src='//codepen.io/alekskorovin/embed/KrGzaj/?height=442&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/KrGzaj/'>KrGzaj</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-              <hr />
-              <p>
-                Был простой элемент формы с чекбоксом:
-              </p>
-              <iframe height='265' scrolling='no' src='//codepen.io/alekskorovin/embed/LkgNBO/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/LkgNBO/'>LkgNBO</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-              <p>
-                И вдруг дизайнеры клиента прислали новый макет, где чекбокс стал переключателем.
-              </p>
-              <p>
-                Используется решение при котором изначально скрывается чекбокс, в контейнер добавляются псевдо-элементы с позиционированием по умолчанию, с псевдо-селектором <b>:checked</b> позиционирование и цвет псевдо-элементов меняются.
-              </p>
-              <iframe height='265' scrolling='no' src='//codepen.io/alekskorovin/embed/KrGzGw/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/KrGzGw/'>KrGzGw</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-              <h3>Задание</h3>
-              <p>
-                Уже сверстан элемент поисковой формы, при наведения фокуса на поле ввода его ширина меняется, заказчику не нравится что при этом элементы "прыгают" и он хотел бы сделать это изменение плавным.
-              </p>
-              <p>Выберите верный вариант и раскомментируйте чтобы проверить работают ли CSS переходы:
-              </p>
-              <iframe height='365' scrolling='no' src='//codepen.io/alekskorovin/embed/grBrpy/?height=365&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/grBrpy/'>grBrpy</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p>
-                Заказчику понравилось решение и он хотел бы чтобы при наведении курсора на поле поиска, цвет обводки плавно поменялся на темно-бардовый (maroon)
-              </p>
-              <iframe height='265' scrolling='no' src='//codepen.io/alekskorovin/embed/grBrWV/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/grBrWV/'>grBrWV</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-
-              <hr />
-
-              <h3>Поддержка браузерами</h3>
-              <p><a href="http://caniuse.com/#feat=css-transitions">http://caniuse.com/#feat=css-transitions</a> IE10+</p>
-
-              <hr />
-              <h3>Дополнительная практика</h3>
-
-              <p>Посмотреть как реализована анимация на сайтах:</p>
-              <ul>
-                <li>SVG иконки, наведение на ссылки (<a href="https://medium.com/">https://medium.com/</a>)</li>
-                <li>
-                  индикация загрузки данных (<a href="http://tobiasahlin.com/spinkit/">http://tobiasahlin.com/spinkit/</a>)
-                </li>
-                <li>
-                  элементы форм (<a href="http://www.material-ui.com/#/components/text-field">http://www.material-ui.com/#/components/text-field</a>)
-                </li>
-              </ul>
-
-            </article>
-
-            <article>
-              <h2><a id="animation-animation" class="anchor" href="#animation-animation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CSS Animation - анимация</h2>
-              <p>Перевод определения <a href="https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md#keyframe-animation"><dfn title="покадровая анимация, способ задания анимации в CSS с помощью ключевых кадров.">keyframe animation</dfn></a></p>
-              <p>
-                <b>CSS Animation</b> &mdash; технология позволяет задавать параметры анимации и используется для реализации покадровой анимации (keyframe animation). Так же с помощью этой технологии можно задать зацикленную анимацию в отличии от переходов, где анимация выполняется один раз.
-              </p>
-              <h3>CSS свойства, опредяющие анимацию (CSS Animation)</h3>
-              <ul class="props">
-                <li><a href="#animation-name">animation-name</a></li>
-                <li><a href="#animation-duration">animation-duration</a></li>
-                <li><a href="#animation-iteration-count">animation-iteration-count</a></li>
-                <li><a href="#animation-timing-function">animation-timing-function</a></li>
-                <li><a href="#animation-delay">animation-delay</a></li>
-                <li><a href="#animation-direction">animation-direction</a></li>
-                <li><a href="#animation-fill-mode">animation-fill-mode</a></li>
-                <li><a href="#animation-play-state">animation-play-state</a></li>
-              </ul>
-              <h3>Инструкция определяющая изменяемые свойства</h3>
-              <ul>
-                <li><a href="#keyframes">@keyframes</a></li>
-              </ul>
-
-              <h3><a id="animation-name" class="anchor" href="#animation-name" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>animation-name</h3>
-              <p>
-                Определяет одно или несколько названий покадровых анимаций.
-              </p>
-              <p>
-                Эта анимация применяется к элементу внутри которого это свойство определяется.
-              </p>
-              <p>
-                Сама анимация с изменяемыми свойствами и ее название должны быть заданы внутри правил @keyframes (кадров).
-              </p>
-              <blockquote>
+};</code></pre>
+            <p>Если <b>style.css</b> находится в той же директории что и HTML-документ, к которому мы хотим применить стили, то добавление ссылки на этот файл в HTML будет выглядеть так:</p>
+<pre><code class="html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Моя первая веб-страница&lt;/title&gt;
+    <span class="mark">&lt;link rel="stylesheet" href="style.css" /&gt;</span>
+&lt;/head&gt;
+...</code></pre>
+            <div class="task">
+                <h3>Задание</h3>
+                <p>
+                    Необходимо перенести внутренние стили во внешний файл и добавить их к нашей странице.
+                </p>
+                <p>
+                    Замените цвета на противоположные. Чтобы увидеть изменения надо сохранить CSS файл и обновить HTML-страницу в браузере (нажать F5 или Ctrl+F5).
+                </p>
+            </div>
+            <h3>Селекторы, свойства и значения</h3>
+            <p>В <b>HTML</b> есть <b>теги</b>, в <b>CSS</b> есть <b>селекторы</b>. Селекторы это имена данные стилям во внутренних либо внешних таблицах стилей.</p>
+            <p>
+                Каждое правило задающее стиль состоит из двух частей:
+            </p>
+            <ul>
+                <li>Селектор &mdash; определяет к чему мы применяем стиль</li>
+                <li>Список CSS-свойств и их значений &mdash; какие свойства мы задаем к элементу выбранному селектором</li>
+            </ul>
+            <p>Несколько селекторов перечисляются через запятую. Свойсто отделяется от значения двоеточием. Несколько пар свойство-значение разделяются точкой с запятой.</p>
+            <blockquote>
                 <b>Синтаксис:</b>
-                animation-name: &lt;имя_покадровой_анимации&gt;;<br />
-                animation-name: &lt;имя_покадровой_анимации_1&gt;, &lt;имя_покадровой_анимации_2&gt;;
-              </blockquote>
-              <pre><code class="css">animation-name: textanimation;</code></pre>
-              <pre><code class="css">animation-name: animation-name;</code></pre>
-              <pre><code class="css">animation-name: opacity-change, moving;</code></pre>
-
-              <hr />
-
-              <h3><a id="animation-duration" class="anchor" href="#animation-duration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>animation-duration</h3>
-              <p>
-                Определяет длительность цикла анимации в секундах.
-              </p>
-              <blockquote>
+                <strong>селектор {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;свойство: значение;<br />
+                    }
+                </strong>
+            </blockquote>
+            <blockquote>
                 <b>Синтаксис:</b>
-                animation-duration: &lt;длительность_цикла_анимации_в_секундах&gt;s;
-              </blockquote>
-              <pre><code class="css">animation-duration: 2s;</code></pre>
-              <pre><code class="css">animation-duration: .3s;</code></pre>
-              <pre><code class="css">animation-duration: .3s, 1s, .5s; /* Если применяется несколько анимаций */</code></pre>
-              <hr />
-
-              <h3><a id="animation-iteration-count" class="anchor" href="#animation-iteration-count" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>animation-iteration-count</h3>
-              <p>
-                Определяет количество повторении анимации. По умолчанию используется значение 1, что означает что анимация будет воспроизведена один раз.
-              </p>
-              <blockquote>
-                <b>Синтаксис:</b>
-                animation-iteration-count: &lt;количество_повторений&gt;;
-              </blockquote>
-              <p>
-                <b>&lt;количество_повторений&gt;</b> это положительное число, по умолчанию 1. Для зацикленной анимации используется значение <b>infinite</b>.
-              </p>
-              <pre><code class="css">animation-iteration-count: 2;</code></pre>
-              <pre><code class="css">animation-iteration-count: infinite;</code></pre>
-              <hr />
-              <p>
-                Используя только эти три свойства вместе с инструкцией @keyframes можно создавать цикличную анимацию.
-              </p>
-              <p>
-                Заданы параметры анимации: имя, длительность, количество повторений (в примере задана бесконечность, значение infinite).
-              </p>
-              <iframe height='265' scrolling='no' src='//codepen.io/alekskorovin/embed/pbxdqA/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/pbxdqA/'>pbxdqA</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-
-              <hr />
-
-              <h3><a id="animation-timing-function" class="anchor" href="#animation-timing-function" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>animation-timing-function</h3>
-              <p>
-                Определяет функцию плавности анимации.
-              </p>
-              <p>
-                Значения такие же как и в CSS Transitions:
-                ease, linear, ease-in, ease-out, ease-in-out, step-start, step-end,
-                steps(&lt;число_шагов&gt;[, [ start | end ] ]),
-                cubic-bezier(&lt;координата_x_точки_P1&gt;, &lt;координата_y_точки_P1&gt;, &lt;координата_x_точки_P1&gt;, &lt;координата_y_точки_P2&gt;)).
-              </p>
-              <blockquote>
-                <b>Синтаксис:</b>
-                animation-timing-function: &lt;функция_плавности&gt;;
-              </blockquote>
-              <p>
-                <b>&lt;количество_повторений&gt;</b> это положительное число, по умолчанию 1. Для зацикленной анимации используется значение <b>infinite</b>.
-              </p>
-              <pre><code class="css">animation-timing-function: ease-in-out;</code></pre>
-              <pre><code class="css">animation-timing-function: steps(6, end);</code></pre>
-              <p>
-                Предыдущий пример с зацикленной анимацией и добавленным определением функции плавности:
-              </p>
-              <iframe height='265' scrolling='no' src='//codepen.io/alekskorovin/embed/ZOqvGR/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/ZOqvGR/'>ZOqvGR</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-              <hr />
-
-              <h3><a id="animation-delay" class="anchor" href="#animation-delay" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>animation-delay</h3>
-              <p>
-                Определяет задержку перед началом анимации.
-              </p>
-              <p>
-                Это разница между временем загрузки элемента и временем начала анимации. По умолчанию значение 0s что означает незамедлительный старт анимации.
-              </p>
-              <blockquote>
-                <b>Синтаксис:</b>
-                animation-delay: &lt;задержка_перед_началом_анимации&gt;s;
-              </blockquote>
-              <pre><code class="css">animation-delay: 0s;</code></pre>
-              <pre><code class="css">animation-delay: 1.1s;</code></pre>
-
-              <p>
-               В предыдущий пример добавим начальное значение цвета и добавим задержку перед началом анимации в 2s.
-              </p>
-              <iframe height='265' scrolling='no' src='//codepen.io/alekskorovin/embed/NAOXRv/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/NAOXRv/'>NAOXRv</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-              <hr />
-
-              <h3><a id="animation-direction" class="anchor" href="#animation-direction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>animation-direction</h3>
-              <p>
-                Определяет направление проигрывания анимации. Помимо обычного проигрывания, анимацию можно проиграть с начала в конец, с начала в конец со сменой направления, с конца в начало со сменой направления.
-              </p>
-              <p>
-                Возможные значения:
-              </p>
-              <ul>
-                <li><b>normal</b> - обычное проигрывание. Значение по умолчанию.</li>
-                <li><b>reverse</b> - проигрывание с конца в начало.</li>
-                <li><b>alternate</b> - с начала в конец со сменой направления.</li>
-                <li><b>alternate-reverse</b> - с конца в начало со сменой направления.</li>
-              </ul>
-              <blockquote>
-                <b>Синтаксис:</b>
-                animation-direction: &lt;направление_проигрывания_анимации&gt;;
-              </blockquote>
-              <pre><code class="css">animation-direction: reverse;</code></pre>
-              <pre><code class="css">animation-direction: alternate;</code></pre>
-              <pre><code class="css">animation-direction: alternate-reverse, alternate; /* Если значений несколько */</code></pre>
-              <iframe height='565' scrolling='no' src='//codepen.io/alekskorovin/embed/PzyEpW/?height=565&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/PzyEpW/'>PzyEpW</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-
-              <hr />
-
-              <h3><a id="animation-fill-mode" class="anchor" href="#animation-fill-mode" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>animation-fill-mode</h3>
-              <p>
-                Определяет, как нужно применять стили к объекту анимации до и после ее выполнения, так же определяет какие стили будут применены во время задержки заданной через animation-delay.
-              </p>
-              <p>
-                Возможные значения:
-              </p>
-              <ul>
-                <li><b>none</b> - cтили анимации не будут применены к элементу до и после ее выполнения.</li>
-                <li><b>forwards</b> - по окончанию анимации элемент сохранит стили последнего ключевого кадра.</li>
-                <li><b>backwards</b> - на протяжении периода задержки элемент сохранит стили первого ключевого кадра. Первый ключевой кадр определяется значением animation-direction.
-                  <p>
-                  Для использования этого значения, должна быть задана задержка animation-delay.
-                  </p>
-                </li>
-                <li><b>both</b> - будут применены стили первого и последнего ключевого кадра.
-                  <p>
-                    Для использования этого значения, должна быть задана задержка animation-delay.
-                  </p>
-                </li>
-              </ul>
-              <blockquote>
-                <b>Синтаксис:</b>
-                animation-fill-mode: &lt;режим_применения_стилей&gt;;
-              </blockquote>
-              <pre><code class="css">animation-fill-mode: forwards;</code></pre>
-              <pre><code class="css">animation-fill-mode: backwards;</code></pre>
-              <pre><code class="css">animation-direction: forwards, both; /* Если значений несколько */</code></pre>
-              <iframe height='650' scrolling='no' src='//codepen.io/alekskorovin/embed/BzqYNx/?height=650&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/BzqYNx/'>BzqYNx</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-
-              <hr />
-
-              <h3><a id="animation-play-state" class="anchor" href="#animation-play-state" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>animation-play-state</h3>
-              <p>
-                Определяет запущена ли анимация или поставлена на паузу. Можно использовать это свойство для запуска анимации в необходимый нам момент.
-              </p>
-              <p>
-                Возможные значения:
-              </p>
-              <ul>
-                <li><b>paused</b> - поставлено на паузу.</li>
-                <li><b>running</b> - воспроизводится.</li>
-              </ul>
-              <blockquote>
-                <b>Синтаксис:</b>
-                animation-play-state: &lt;состояние_анимации&gt;;
-              </blockquote>
-              <pre><code class="css">animation-play-state: running;</code></pre>
-              <pre><code class="css">animation-play-state: running, paused, running;</code></pre>
-
-              <p>
-                Если навести на квадрат начинает проигрываться анимация
-              </p>
-              <iframe height='265' scrolling='no' src='//codepen.io/alekskorovin/embed/zBmWRR/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/zBmWRR/'>zBmWRR</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-
-              <p>
-                Можно использовать несколько анимаций и запускать их используя класс, добавляемый JavaScript-кодом либо псевдо-селектором состояния наведения либо фокуса:
-              </p>
-              <iframe height='600' scrolling='no' src='//codepen.io/alekskorovin/embed/dXgmKa/?height=600&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/dXgmKa/'>dXgmKa</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-              <blockquote>
-                Библиотека анимационных эффектов
-                <a href="https://daneden.github.io/animate.css/">animate.css</a>
-              </blockquote>
-
-              <hr />
-
-              <hr />
-
-              <h3><a id="keyframes" class="anchor" href="#keyframes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>@keyframes</h3>
-              <p>
-                Правила для кадров анимации.
-                Предназначены для задания параметров ключевых кадров анимации.
-              </p>
-              <img src="images/percentage-timeline.png" />
-              <blockquote>
-                <b>Синтаксис:</b>
-                @keyframes &lt;название_анимации&gt; {<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;ключевой_кадр&gt; {<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;свойство&gt;: &lt;значение&gt;;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                <strong>первый_селектор, второй_селектор {<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;первое_свойство: первое_значение;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;второе_свойство: второе_значение;<br />
                 }
-              </blockquote>
-              <blockquote>
-                @keyframes &lt;название_анимации&gt; {<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;ключевой_кадр_1&gt; {<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;свойство_1&gt;: &lt;значение_1&gt;;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;ключевой_кадр_2&gt; {<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;свойство_2&gt;: &lt;значение_2&gt;;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                }
-              </blockquote>
-
-              <p>
-                <b>&lt;название_анимации&gt;</b> &mdash; любое название без пробелов.
-              </p>
-              <p>
-                <b>&lt;ключевой_кадр&gt;</b> допустимые значения:
-              </p>
-              <ul>
-                <li>from - первый кадр</li>
-                <li>to - последний кадр</li>
-                <li>&lt;процентное_значение&gt;% - кадр размещенный на временной шкале в указанной позиции (от 0 до 100%)</li>
-              </ul>
-              <pre><code class="css">@keyframes moving {
-    0% {
-      top: 0;
-      left: 0;
-    }
-    50% {
-      top: 50px;
-    }
-    100% {
-      top: 100px;
-      left: 80%;
-    }
-  }</code></pre>
-              <blockquote>
-                <b>Особенность</b>
-                строчки с указанным !important игнорируются.
-              </blockquote>
-              <div class="error">
-                Ошибка
-                <pre><code class="css">@keyframes animation-name {
-    0%   { margin-top: 50px; }
-    50%  { margin-top: 75px !important; } /* строка пропускается */
-    100% { margin-top: 100px; }
-  }</code></pre>
-              </div>
-
-              <blockquote>
-                <b>Особенность</b>
-                Если указаны ключевые точки с значением, берется последняя строчка.
-              </blockquote>
-              <div class="error">
-                Ошибка
-                <pre><code class="css">@keyframes animation {
-    0%  { top: 0; }
-    20% { top: 30px; left: 20px; }
-    20% { top: 10px; } /* будет использовано top: 10px */
-  }</code></pre>
-              </div>
-              <hr />
-
-              <h3><a id="animation-animation" class="anchor" href="#animation-animation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>animation</h3>
-              <p>
-                Сокращенная запись которая служит для объединения всех свойств относящихся к параметрам анимации в одну строку.
-              </p>
-
-              <blockquote>
-                <b>Синтаксис:</b>
-                animation: &lt;длительность_цикла_анимации_в_секундах&gt;s<br />
-                &lt;функция_плавности&gt;<br />
-                &lt;задержка_перед_началом_анимации&gt;s<br />
-                &lt;количество_повторений&gt;<br />
-                &lt;направление_проигрывания_анимации&gt;<br />
-                &lt;режим_применения_стилей&gt;<br />
-                &lt;состояние_анимации&gt;<br />
-                &lt;название_анимации&gt;;
-              </blockquote>
-              <blockquote>
-                <b>Синтаксис:</b>
-                animation: &lt;animation-duration&gt;s<br />
-                &lt;animation-timing-function&gt;<br />
-                &lt;animation-delay&gt;s<br />
-                &lt;animation-iteration-count&gt;<br />
-                &lt;animation-direction&gt;<br />
-                &lt;animation-fill-mode&gt;<br />
-                &lt;animation-play-state&gt;<br />
-                &lt;animation-name&gt;;
-              </blockquote>
-              <p>
-                Значения по умолчанию:
-              </p>
-              <ul>
-                <li>animation-duration: 0s</li>
-                <li>animation-timing-function: ease</li>
-                <li>animation-delay: 0s</li>
-                <li>animation-iteration-count: 1</li>
-                <li>animation-direction: normal</li>
-                <li>animation-fill-mode: none</li>
-                <li>animation-play-state: running</li>
-                <li>animation-name: none</li>
-              </ul>
-              <pre><code class="css">animation: 3s ease-in-out 1s infinite reverse both paused slidein;
-
-                /* @keyframes duration | timing-function | delay |
-                iteration-count | direction | fill-mode | play-state | name */</code></pre>
-
-              <blockquote>
-                <b>Спецификация</b>
-                <a href="https://www.w3.org/TR/css3-animations/">https://www.w3.org/TR/css3-animations/</a>
-              </blockquote>
-              <blockquote>
-                <b>Документация</b>
-                <a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Animations/Ispolzovanie_CSS_animatciy">MDN</a>
-                <a href="http://tympanus.net/codrops/css_reference/animation/">Блог CoDrops</a>
-              </blockquote>
-
-              <h3>Пример и задача</h3>
-              <p>
-                Записать все значения используя одно свойство animate. Там где значения нет можно использовать none или 0s в зависимости от параметра
-              </p>
-              <iframe height='265' scrolling='no' src='//codepen.io/alekskorovin/embed/wWYjVm/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/wWYjVm/'>wWYjVm</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-              <p>
-                То же самое для этого примера:
-              </p>
-              <iframe height='265' scrolling='no' src='//codepen.io/alekskorovin/embed/WxaJdd/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/WxaJdd/'>WxaJdd</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-              <p>
-                Теперь уберите лишние свойства оставьте минимальное количество необходимых параметров для того чтобы анимация работала так же как сейчас.
-              </p>
-              <hr />
-              <h3>Поддержка браузерами</h3>
-              <p><a href="http://caniuse.com/#feat=css-animation">http://caniuse.com/#feat=css-animation</a> IE10+</p>
-
-            </article>
-
-            <article>
-              <h3>Анимация с JavaScript</h3>
-              <p>
-                Пример простейшей анимации HTML элемента с помощью JavaScript. С течением времени меняется свойство margin-left
-              </p>
-              <iframe height='265' scrolling='no' src='//codepen.io/alekskorovin/embed/XKxYWA/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/alekskorovin/pen/XKxYWA/'>XKxYWA</a> by Aleksey Korovin (<a href='http://codepen.io/alekskorovin'>@alekskorovin</a>) on <a href='http://codepen.io'>CodePen</a>.
-              </iframe>
-            </article>
-
-            <article>
-              <h3>CSS transfrom - трансформации</h3>
-              <p>
-                Можно использовать CSS 2D и CSS 3D трансформации либо с помощью JavaScript либо используя уже известные CSS Transitions и CSS Animations.
-              </p>
-              <p>
-                CSS трансформации работают плавнее и быстрее чем анимация традиционных свойств позиционирования (left, top, bottom, right, margin).
-              </p>
-              <blockquote>
-                <b>Спецификация</b>
-                <a href="https://www.w3.org/TR/css-transforms-1/">CSS Transforms</a>
-              </blockquote>
-              <blockquote>
-                <b>Документация</b>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">MDN</a>
-              </blockquote>
-            </article>
-            <article>
-              <h3>С помощью JavaScript кода можно "рисовать" в HTML-элементе canvas</h3>
-              <p>
-                <a href="https://jsfiddle.net/alekskorovin/BbS7n/">Фракталы</a>
-              </p>
-            </article>
-            <article>
-              <h3>SVG - векторная графика, можно анимировать векторные изображения.</h3>
-              <p><a href="https://jsfiddle.net/alekskorovin/toq3L3bg/">Используя уже устаревшую технологию анимации SVG SMIL можно делать трансформацию формы.</a></p>
-              <p><a href="http://codepen.io/alekskorovin/pen/qNJKjR?editors=1100#0">Линейная анимация SVG (прорисовка по векторному контуру)</a></p>
-              <p><a href="https://css-tricks.com/svg-line-animation-works/">Как работает линейная SVG анимация</a></p>
-              <h2>Вопросы?</h2>
-              <p><a href="mailto:alekskorovin@gmail.com">alekskorovin@gmail.com</a></p>
-            </article>
-            -->
+                </strong>
+            </blockquote>
+            <p>Для начала мы рассмотрим <b>HTML селекторы</b>, которые являются названиями HTML тегов и используются для глобального изменения стилей выбранного типа элемента.</p>
+<pre><code class="css">body {
+    color: navy;
+    font-size: 16px;
+}</code></pre>
+            <p>
+                Эти стили применят заданные значения свойств <b>color</b> и <b>font-size</b> к селектору <b>body</b> &mdash; текст станет синим и его размер будет равен 16-ти пикселам. Селектор <b>body</b> соответствует HTML элементу <b>body</b>, внутри которого находятся все элементы которые отображаются в браузере.
+            </p>
+            <p>
+                Эти стили будут влиять на все элементы вложенные в тег <b>body</b>, кроме тех для которых заданы другие значения этих же свойств (<b>color</b>, <b>font-size</b>).
+            </p>
+            <div class="task">
+                <h3>Задание</h3>
+                <p>
+                    Добавить приведенные выше стили для селектора <b>body</b> к уже заданным стилям в файле <b>styles.css</b>.
+                </p>
+            </div>
+            <p>
+                После применения глобальных стилей к селектору <b>body</b>, веб-страница преобразится:
+            </p>
+            <img src="images/styles-body.png" alt="Глобальные стили селектора body" />
+            <p>
+                Стоит отметить, что даже если заданы размеры шрифта и цвет для самого родительского элемента, размер текста в заголовках остался отличным от размера текста в параграфах, кроме того сохранился прежний цвет ссылок и параграфов.
+            </p>
+            <p>
+                У каждого браузера есть стили по умолчанию для каждого HTML-элемента, именно поэтому если сделать HTML-разметку, можно заметить что заголовки, параграфы, списки, ссылки обладают заданным цветом, размером шрифта и отступами. Для заголовков задан размер в относительных единицах зависящих от размера шрифта родительского элемента. Поэтому если задать <b>font-size</b> еще больше, например 20px, сохранить CSS файл и обновить страницу, можно увидеть, что заголовки так же увеличатся.
+            </p>
+            <h3>Размеры</h3>
+            <p>Чем можно задавать размеры в CSS:</p>
+            <ul>
+                <li><b>px</b> &mdash; пикселях (это минимальная точка на любом экране)</li>
+                <li><b>%</b> &mdash; процентах (в большинстве случаев относительно родительского элемента, но зависит от контекста)</li>
+                <li><b>em</b> &mdash; типографических единицах (рассчитывается относительно размера шрифта родительского элемента, например, если font-size в документе 12px, 1em равен 12px.)</li>
+                <li><b>rem</b> &mdash; (root em) типографических единицах (рассчитывается так же как <b>em</b> но относительно корневого элемента <b>html</b> что удобно при масштабировании всего сайта)</li>
+                <li><b>vw, vh, vmin, vmax</b> &mdash; относительных единицах (рассчитываются относительно размера экрана), эти значения были созданы для поддержки мобильных устройств</li>
+            </ul>
+            <p>Устаревшие единицы, вместо которых можно использовать пиксели:</p>
+            <ul>
+                <li>1mm (мм) = 3.8px</li>
+                <li>1cm (см) = 38px</li>
+                <li>1pt (типографический пункт) = 4/3px</li>
+                <li>1pc (типографическая пика) = 16px</li>
+            </ul>
+            <p>Если размером является <b>0</b>, размерную единицу можно не указывать:</p>
+            <pre><code class="css">border: 0;</code></pre>
+            <p>Современные браузеры могут хорошо масштабировать элементы веб-страниц даже если их размеры заданы в пикселах.</p>
         </section>
 
         <aside id="sidebar">

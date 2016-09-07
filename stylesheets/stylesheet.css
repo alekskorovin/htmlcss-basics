@@ -939,8 +939,14 @@ pre code {
 }
 .task {
   border: dashed 3px #ccc;
-  padding: 1rem 2rem 1rem 5rem;
+  padding: 1rem 2rem 1rem 2rem;
   margin-bottom: 1rem;
+}
+.task p {
+  margin: 0.5rem 0 0 0;
+}
+.task h3 {
+  margin: 0 0 0.5rem 0;
 }
 * code {
   font-size: inherit;
@@ -951,8 +957,8 @@ pre code {
 #main-content h5 {
   font-size: 18px;
 }
-.mark, .mark .hljs-meta {
-  color: forestgreen;
+.mark, .mark .hljs-meta, .mark * {
+  color: forestgreen !important;
 }
 .accent, .accent .hljs-meta {
   color: blueviolet;
@@ -962,4 +968,19 @@ figcaption {
 }
 .required {
   color: #404080;
+}
+.hljs-tag {
+  color: #5c8bbe;
+}
+.hljs-attribute,
+.hljs-name {
+  color: #486c8c;
+  font-weight: bold;
+}
+.hljs-selector-tag,
+.hljs-attr {
+  color: maroon;
+}
+.hljs-tag .hljs-string {
+  color: rgb(79, 11, 99);
 }
