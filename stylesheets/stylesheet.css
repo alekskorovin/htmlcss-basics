@@ -984,3 +984,55 @@ figcaption {
 .hljs-tag .hljs-string {
   color: rgb(79, 11, 99);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  position: relative;
+}
+h1:before,
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before,
+p:before,
+li:before {
+  content: '';
+  position: absolute;
+  transition: background 0.3s ease-in-out;
+  background: rgba(50%, 50%, 50%, 0);
+  z-index: -1;
+}
+h6:hover:before,
+h5:hover:before,
+h4:hover:before,
+h3:hover:before,
+h2:hover:before,
+h1:hover:before,
+li:hover:before,
+p:hover:before {
+  width: 400%;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 100%;
+  background: rgba(50%, 50%, 50%, 0.15);
+}
+h6:hover:before,
+h5:hover:before,
+h4:hover:before,
+h3:hover:before,
+h2:hover:before,
+h1:hover:before {
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  height: 160%;
+  background: rgba(80%, 60%, 90%, 0.15);
+}
+body {
+  overflow-x: hidden;
+}
