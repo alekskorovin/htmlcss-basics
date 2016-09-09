@@ -910,6 +910,20 @@ a {
                 <li><b>word-spacing </b> &mdash; расстояние между словами.</li>
                 <li><b>text-indent</b> &mdash; отступ слева в первой строке параграфа.</li>
             </ul>
+            <h5>font-size</h5>
+            <p><b>font-size</b> &mdash; задаёт размер шрифта. Следует осторожно задавать этот размер, к примеру, размер текста в параграфах не должен быть больше размера заголовков и подзаголовков. Наиболее часто для задания размера шрифта используются <b>px</b>, <b>em</b>, <b>rem</b>.</p>
+            <p data-height="137" data-theme-id="0" data-slug-hash="GjpKxN" data-default-tab="css,result" data-editable="true" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/GjpKxN/?editors=1100#">font-size</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+            <h5>line-height</h5>
+            <p><b>line-height</b> &mdash; задаёт высоту строки элемента без имзенения размера шрифта. Рекомендуется задавать это значение числом без размерных единиц, например <code class="css">line-height: 2</code> задаст высоту строки равную двум размерам шрифта. Так же можно задавать значение <b>normal</b>, которое задается по умолчанию.</p>
+            <p data-height="167" data-theme-id="0" data-slug-hash="GjpKXA" data-default-tab="css,result" data-editable="true" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/GjpKXA/">line-height</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>Если текст переносится на другую строчку, то <b>line-height</b> так же является расстоянием между строками:</p>
+            <p data-height="184" data-theme-id="0" data-slug-hash="LRpPXV" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/LRpPXV/">line-height multiline</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>Если задать <b>line-height</b> в пикселах <b>px</b>, то при изменении размера шрифта, нужно будет пересчитывать это значение, иначе может произойти неприятный момент:</p>
+            <p data-height="165" data-theme-id="0" data-slug-hash="QKjLzA" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/QKjLzA/">line-height  in px multiline</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>font-weight</h5>
+            <p><b>font-weight</b> &mdash; задает жирность текста. Наиболее часто используется <code class="css">font-weight: bold</code> &mdash; для задания жирного шрифта (тоже самое <code class="css">700</code>), и <code class="css">normal</code> &mdash; для задания нежирного текста (тоже самое <code class="css">400</code>). Другие значения поддерживаются не всеми шрифтами: <b>bolder</b> &mdash; еще более жирный, <b>lighter</b> &mdash; более тонкий шрифт, <b>100</b>, <b>200</b>, <b>300</b>, <b>500</b>, <b>600</b>, <b>800</b>, <b>900</b>.</p>
+            <p data-height="144" data-theme-id="0" data-slug-hash="pEjzXQ" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/pEjzXQ/">font-weight</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
         </section>
 
         <aside id="sidebar">
@@ -924,6 +938,7 @@ a {
 </div>
 
 <script src="javascripts/highlight/highlight.pack.js"></script>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

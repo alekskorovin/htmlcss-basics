@@ -951,12 +951,7 @@ pre code {
 * code {
   font-size: inherit;
 }
-#main-content h4 {
-  font-size: 20px;
-}
-#main-content h5 {
-  font-size: 18px;
-}
+
 .mark, .mark .hljs-meta, .mark * {
   color: forestgreen !important;
 }
@@ -1035,4 +1030,16 @@ h1:hover:before {
 }
 body {
   overflow-x: hidden;
+}
+#main-content h2, h2 {
+  font-size: 1.8rem;
+}
+#main-content h3, h3 {
+  font-size: 1.6rem;
+}
+#main-content h4, h4 {
+  font-size: 1.4rem;
+}
+#main-content h5, h5 {
+  font-size: 1.2rem;
 }
