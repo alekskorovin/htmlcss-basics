@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dec15ece-6bb4-41c6-a394-73aff07299f3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/stylesheet.css" afterPath="$PROJECT_DIR$/stylesheets/stylesheet.css" />
     </list>
     <ignored path="lesson-1-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6477987">
-              <caret line="925" column="399" selection-start-line="925" selection-start-column="399" selection-end-line="925" selection-end-column="399" />
+            <state vertical-scroll-proportion="0.3325893">
+              <caret line="880" column="146" selection-start-line="880" selection-start-column="146" selection-end-line="880" selection-end-column="146" />
               <folding>
                 <element signature="n#style#0;n#img#3;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -357,8 +356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6477987">
-          <caret line="925" column="399" selection-start-line="925" selection-start-column="399" selection-end-line="925" selection-end-column="399" />
+        <state vertical-scroll-proportion="0.3325893">
+          <caret line="880" column="146" selection-start-line="880" selection-start-column="146" selection-end-line="880" selection-end-column="146" />
           <folding>
             <element signature="n#style#0;n#img#3;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
