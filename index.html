@@ -910,6 +910,7 @@ a {
                 <li><b>word-spacing </b> &mdash; расстояние между словами.</li>
                 <li><b>text-indent</b> &mdash; отступ слева в первой строке параграфа.</li>
             </ul>
+            <h4>CSS-свойства относящиеся к шрифту</h4>
             <h5>font-size</h5>
             <p><b>font-size</b> &mdash; задаёт размер шрифта. Следует осторожно задавать этот размер, к примеру, размер текста в параграфах не должен быть больше размера заголовков и подзаголовков. Наиболее часто для задания размера шрифта используются <b>px</b>, <b>em</b>, <b>rem</b>.</p>
             <p data-height="137" data-theme-id="0" data-slug-hash="GjpKxN" data-default-tab="css,result" data-editable="true" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/GjpKxN/?editors=1100#">font-size</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
@@ -924,6 +925,75 @@ a {
             <h5>font-weight</h5>
             <p><b>font-weight</b> &mdash; задает жирность текста. Наиболее часто используется <code class="css">font-weight: bold</code> &mdash; для задания жирного шрифта (тоже самое <code class="css">700</code>), и <code class="css">normal</code> &mdash; для задания нежирного текста (тоже самое <code class="css">400</code>). Другие значения поддерживаются не всеми шрифтами: <b>bolder</b> &mdash; еще более жирный, <b>lighter</b> &mdash; более тонкий шрифт, <b>100</b>, <b>200</b>, <b>300</b>, <b>500</b>, <b>600</b>, <b>800</b>, <b>900</b>.</p>
             <p data-height="144" data-theme-id="0" data-slug-hash="pEjzXQ" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/pEjzXQ/">font-weight</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>font-family</h5>
+            <p>
+                Задаёт шрифт, например "Times New Roman", "Arial" или "Verdana".
+            </p>
+            <p>
+                Браузер использует шрифт который установлен на компьютере пользователя. Существует список "безопасных" шрифтов (Aria, Verdana, Times New Roman &mdash; это шрифты которые установлены практически на любых компьютерах.
+            </p>
+            <p>
+                Можно задавать через запятую несколько шрифтов, тогда браузер будет использовать первый если найдёт его на компьютере, если не найдёт первый будет использовать второй и так до последнего варианта. Поэтому самый распространенный вариант, когда указывается минимум три шрифта: <code class="css">font-family: arial, helvetica, sans-serif</code> &mdash; что соответствет шрифтам Arial, Helvetica, а так же если не найдены предыдущие два любой шрифт без засечек <b>sans-serif</b>.
+            </p>
+            <h6>Типы шрифтов</h6>
+            <p>В основном шрифты можно разделить на:</p>
+            <ul>
+                <li><b>serif</b> &mdash; шрифт с засечками (Times New Roman, Times, Georgia и другие)</li>
+                <li><b>sans-serif</b> &mdash; шрифт без засечек (Arial, Verdana, Helvetica, Tahoma и другие)</li>
+            </ul>
+            <p>Если название шрифта состоит из нескольких слов, это название заключается в кавычки:<br /> <code class="css">font-family: "Times New Roman", Times, serif;</code></p>
+            <p data-height="180" data-theme-id="0" data-slug-hash="BLodWg" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/BLodWg/">font-family - serif, sans-serif</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>font-style</h5>
+            <p>
+                <b>font-style</b> &mdash; задаёт курсивное (наклонное) ли начертание текста или нет:
+            </p>
+            <ul>
+                <li><code class="css">font-style: italic;</code> &mdash; <em>курсивное начертание текста</em>.</li>
+                <li><code class="css">font-style: normal;</code> &mdash; нормальное начертание текста.</li>
+            </ul>
+            <p data-height="184" data-theme-id="0" data-slug-hash="bwVAAG" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/bwVAAG/">font-style</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h4>CSS-свойства относящиеся к тексту</h4>
+            <h5>text-align</h5>
+            <p>Необходим для выравнивания текста (<b>left</b>, <b>right</b>, <b>center</b>, <b>justify</b>):</p>
+            <p data-height="279" data-theme-id="0" data-slug-hash="yaYoza" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/yaYoza/">text-align</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>text-decoration</h5>
+            <p>
+                <b>text-decoration</b> &mdash; указывает должен ли текст быть подчёркнут, надчёркнут либо перечёркнут:
+            </p>
+            <ul>
+                <li><code class="css">text-decoration: underline</code> &mdash; подчёркнутый текст</li>
+                <li><code class="css">text-decoration: overline</code> &mdash; линия сверху текста</li>
+                <li><code class="css">text-decoration: line-through</code> &mdash; перечёркнутый текст</li>
+            </ul>
+            <p>Если задаётся <code class="css">text-decoration: none;</code> &mdash; отменяется любое подчёркивание.</p>
+            <p data-height="233" data-theme-id="0" data-slug-hash="YGyxZR" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a h ref="http://codepen.io/alekskorovin/pen/YGyxZR/">text-decoration</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>text-transform</h5>
+            <p>
+                <b>text-transform</b> меняет регистр текста:
+            </p>
+            <ul>
+                <li><code class="css">text-transform: uppercase</code> &mdash; делает все буквы заглавными (большими).</li>
+                <li><code class="css">text-transform: lowercase</code> &mdash; делает все буквы строчными (маленькими).</li>
+                <li><code class="css">text-transform: capitalize</code> &mdash; делает первую букву каждого слова большой.</li>
+                <li><code class="css">text-transform: none</code> &mdash; отменяет предыдущие изменения.</li>
+            </ul>
+            <p data-height="204" data-theme-id="0" data-slug-hash="rrOYBo" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/rrOYBo/">text-transform</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h4>CSS-свойства относящиеся к отступам в тексте</h4>
+            <h5>letter-spacing</h5>
+            <p>
+                <b>letter-spacing</b> &mdash; задаёт расстояние между буквами, по умолчанию это значение равно нулю. Это расстояние можно задавать в любых размерных единицах CSS.
+                Для сброса предыдущих значений, используется <b>normal</b>.
+            </p>
+            <h5>word-spacing</h5>
+            <p>
+                <b>word-spacing</b> &mdash; задаёт расстояние между словами, по умолчанию это значение равно нулю. Это расстояние можно задавать в любых размерных единицах CSS.
+                Для сброса предыдущих значений, используется <b>normal</b>.
+            </p>
+            <h5>text-indent</h5>
+            <p>
+                <b>text-indent</b> &mdash; задаёт отступ слева для первой строки текста, по умолчанию это значение равно нулю. Этот отступ можно задавать в любых размерных единицах CSS. Для сброса предыдущих значений, используется <b>0</b>.
+            </p>
+            <p data-height="326" data-theme-id="0" data-slug-hash="ALWbvk" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ALWbvk/">letter-spacing, word-spacing, text-indent</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
         </section>
 
         <aside id="sidebar">

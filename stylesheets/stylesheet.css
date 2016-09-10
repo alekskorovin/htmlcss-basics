@@ -1042,4 +1042,9 @@ body {
 }
 #main-content h5, h5 {
   font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+#main-content h6, h6 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
 }
