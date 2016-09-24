@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
@@ -35,7 +34,7 @@
                     <a id="html" class="anchor" href="#html" aria-hidden="true"><span aria-hidden="true"
                                                                                       class="octicon octicon-link"></span>HTML</a>
                 </h2>
-
+                <img src="images/HTML5 Logo.svg" style="width: 40%; float: right; marring-left: 1rem;" alt="HTML5" />
                 <p>
                     <b>HTML</b> (<b>H</b>yper<b> T</b>ext <b>M</b>arkup <b>L</b>anguage) &mdash; это язык разметки для
                     описания веб-страниц.
@@ -165,6 +164,11 @@
                         Для копирования файлов сайта со своего компьютера на веб-сервер и обратно, как правило используется протокол передачи файлов <b>FTP</b> (<b>F</b>ile <b>T</b>ransfer <b>P</b>rotocol).<br />
                         Для работы с FTP рекомендуется программа <a href="https://filezilla-project.org/">Filezilla</a>.
                     </p>
+                    <div class="task">
+                        <h3>Задание</h3>
+                        Установить программу Filezilla и подключиться по FTP к серверу<br />
+                        <a href="http://1gb.ua/default.aspx?ti=6&hti=88">инструкция по настройке</a>
+                    </div>
                     <h4>Типы сайтов по содержимому</h4>
                     <p>По содержимому сайт может быть двух типов:</p>
                     <ol>
@@ -687,9 +691,20 @@
                 <li><b>GIF</b> (произносится как “jif”) &mdash; растровые изображения с поддержкой пикселей с полной прозрачностью. Поддерживает палитру из 256 цветов. Может содержать покадровую анимацию.</li>
             </ul>
             <p>Очень важно подготавливать и сжимать изображеня для веб. Изображения должны "весить" как можно меньше но без видимой потери качества. Особенно это критично для JPG, потом для PNG. В Photoshop-е есть встроенная функциональность <b>Save for Web</b> где можно используя различные настройки сохранить изображение в нужном формате и качестве.  Кроме того есть специальные утилиты и онлайн-сервисы (<a href="https://tinypng.com/">tinypng</a>, <a href="https://tinyjpg.com/">tinyjpg</a>, <a href="https://jakearchibald.github.io/svgomg/">SVGOmg</a>).</p>
+            <h4>&lt;div&gt; и &gt;span&gt;</h4>
+            <p>
+                Два не несущих смысла и наверное самых популярных тега. По умолчанию у них нет никаких стилей и они идеально работают вместе с CSS.
+            </p>
+            <ul>
+                <li><b>div</b> &mdash; блочный элемент, которым можно разделять секции (использовался до появления семантических блоков повсеместно). Одним этим тегом можно сверстать весь сайт.</li>
+                <li><b>span</b> &mdash; строчный элемент для обозначения фрагмента текста.</li>
+            </ul>
+            <p>Если добавить к элементам атрибуты <b>id</b> (уникальное название) и <b>class</b> (хранит название CSS-класса) и стили, и сделать разметку только этими двумя элементами, у вас получится сайт, однако делать этого всё же не стоит.</p>
+            <p data-height="357" data-theme-id="0" data-slug-hash="WGpzkV" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/WGpzkV/">div and span</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
         </section>
         <section>
             <h2>CSS</h2>
+            <img src="images/CSS3_badge.svg" alt="CSS3" style="float: right; width: 40%; margin-left: 1rem;" />
             <p>
                 <b>CSS</b> &mdash; <b>C</b>ascading <b>S</b>tyle <b>S</b>heets (каскадные таблицы стилей) это <b>язык описания внешнего вида</b> документа, написанного с использованием языка разметки.
             </p>
@@ -836,6 +851,35 @@ a {
             <p>
                 У каждого браузера есть стили по умолчанию для каждого HTML-элемента, именно поэтому если сделать HTML-разметку, можно заметить что заголовки, параграфы, списки, ссылки обладают заданным цветом, размером шрифта и отступами. Для заголовков задан размер в относительных единицах зависящих от размера шрифта родительского элемента. Поэтому если задать <b>font-size</b> еще больше, например 20px, сохранить CSS файл и обновить страницу, можно увидеть, что заголовки так же увеличатся.
             </p>
+            <h4>Селекторы CSS-класс и ID</h4>
+            <p>
+                Если необходимо использовать стиль одного элемента к другому элементу возникает проблема потому что другой элемент обозначается другим тегом.
+            </p>
+            <p>
+                Мы можем добавить разным элементам один и тот же CSS-класс с помощью атрибута <b>class</b> и используя селектор CSS-класса в CSS применить один и тот же стиль к любым элементам:
+            </p>
+            <blockquote>
+                <b>Синтаксис HTML:</b>
+                &lt;название_тега class="имя_css_класса" ...&gt;
+            </blockquote>
+            <blockquote>
+                <b>Синтаксис CSS:</b>
+                .имя_css_класса { стили }
+            </blockquote>
+            <p data-height="258" data-theme-id="0" data-slug-hash="EgWEQm" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/EgWEQm/">css class</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>Рекомендуется использовать CSS-классы вместо ID везде, где это возможно, потому что CSS-классы можно использовать сколько угодно, а ID &mdash; только один раз на странице.</p>
+            <p>
+                Мы можем добавить разным элементам один стиль с помощью атрибута <b>id</b> используя селектор ID:
+            </p>
+            <blockquote>
+                <b>Синтаксис HTML:</b>
+                &lt;название_тега id="уникальное_имя" ...&gt;
+            </blockquote>
+            <blockquote>
+                <b>Синтаксис CSS:</b>
+                #уникальное_имя { стили }
+            </blockquote>
+            <p data-height="265" data-theme-id="0" data-slug-hash="pEZLkg" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/pEZLkg/">id</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h3>Размеры</h3>
             <p>Чем можно задавать размеры в CSS:</p>
             <ul>
@@ -1000,6 +1044,14 @@ a {
                 <b>text-indent</b> &mdash; задаёт отступ слева для первой строки текста, по умолчанию это значение равно нулю. Этот отступ можно задавать в любых размерных единицах CSS. Для сброса предыдущих значений, используется <b>0</b>.
             </p>
             <p data-height="326" data-theme-id="0" data-slug-hash="ALWbvk" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ALWbvk/">letter-spacing, word-spacing, text-indent</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <div class="task">
+                <h3>Задание</h3>
+                <p>Выложить свою страничку на FTP в каталог со своим именем.</p>
+            </div>
+            <div class="task">
+                <h3>Домашнее задание</h3>
+                <p>Пройти 14 указанных уроков и выложить последнюю страницу на FTP в каталог со своим именем.</p>
+            </div>
         </section>
 
         <aside id="sidebar">
@@ -1016,5 +1068,16 @@ a {
 <script src="javascripts/highlight/highlight.pack.js"></script>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/jquery.scrollNav.min.js"></script>
+<script>
+    $('#content-wrapper').scrollNav({
+        sections: 'h2, h3, h4',
+        subSections: true,
+        sectionElem: 'div',
+        showHeadline: true,
+        headlineText: 'Перейти к'
+    });
+</script>
 </body>
 </html>
