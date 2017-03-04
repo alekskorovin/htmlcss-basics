@@ -231,7 +231,7 @@
                     <strong>&lt;tag&gt;</strong> content <strong>&lt;/tag&gt;</strong>
                 </blockquote>
                 <p>
-                    Не у всех тегов есть закрывающий тег. <b>Тег без закрывающего тега называется одиночный или  само-закрывающийся.</b> Это теги, такие как <code><b>&lt;br /&gt;</b></code> &mdash; перевод строки и <code><b>&lt;hr /&gt;</b></code> &mdash; тематический разделитель между параграфами (в предыдущей версии horizontal ruler &mdash; горизонтальный разделитель), а так же ряд других тегов.
+                    Не у всех тегов есть закрывающий тег. <b>Тег без закрывающего тега называется одиночный или  само-закрывающийся.</b> Это теги, такие как <code><b>&lt;br /&gt;</b></code> &mdash; перевод строки и <code><b>&lt;hr /&gt;</b></code> &mdash; тематический разделитель между параграфами (в предыдущей версии HTML &mdash; horizontal ruler &mdash; горизонтальный разделитель), а так же ряд других тегов.
                 </p>
                 <blockquote>
                     <b>Синтаксис одиночных тегов:</b>
@@ -290,10 +290,10 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
                 <p>Обновите страницу в браузере и обратите внимание на то что вкладка браузера теперь содержит название: "Моя первая веб-страница".</p>
-                <p>Теперь если попытаться сохранить документ из браузера на рабочий стол либо в любую другую папку, вы увидите что в качестве названия веб-страницы используется значение элемента <b>title</b>!</p>
+                <p>Теперь если попытаться сохранить документ из браузера на рабочий стол либо в любую другую папку, вы увидите что в качестве названия веб-страницы используется содержимое элемента <b>title</b>!</p>
                 <img src="images/title-document-name.png" alt="Название документа берется из значения элемента title" />
                 <p>
-                    Этот же заголовок используется когда вы добавляете в избранные закладки эту страницу (в правом верхнем углу, необходимо нажать на иконку звёздочки):
+                    Этот же заголовок используется когда вы добавляете в избранные закладки эту страницу <br />(в правом верхнем углу, необходимо нажать на иконку звёздочки):
                 </p>
                 <img src="images/favorites-title.png" alt="Название документа при добавлении в избранные закладки из значения элемента title" />
                 <h5>Элемент <b>head</b></h5>
@@ -453,10 +453,10 @@
 &lt;/html&gt;</code></pre>
                 <p>Результат который должен получиться:</p>
                 <img src="images/headings-in-web-page.png" alt="Заголовки и подзаголовки в веб-странице" />
-                <p>Браузер уже применил к заголовкам стили по умолчанию, поэтому они отличаются от текста в абзацах (изменился размер букв и рассотяние между строками). В дальнейшем эти стили можно будет изменить.</p>
+                <p>Браузер уже применил к заголовкам стили по умолчанию, поэтому они отличаются от текста в абзацах (изменился размер букв и расстояние между строками). В дальнейшем эти стили можно будет изменить.</p>
                 <blockquote>
                     <b>Особенность</b>
-                    Основной заголовок <strong>h1</strong> должен указываться на странице либо внутри семантического тега обозначающего статью один раз. Подзаговолков (<strong>h2-h6</strong>) может быть несколько.
+                    Основной заголовок <strong>h1</strong> должен указываться на странице либо внутри семантического тега обозначающего статью один раз. Подзаголовков (<strong>h2-h6</strong>) может быть несколько.
                 </blockquote>
                 <img src="images/headings-hierarchy.png" alt="Правильная иерархия заголовков" style="float: right; width: 60%; margin-left: 2rem;" />
                 <p>
@@ -578,7 +578,7 @@
                 <div class="task">
                     <h3>Задание</h3>
                     <ul>
-                        <li>В конце страницы Необходимо добавить заголовок "Мои приоритеты по изучению".</li>
+                        <li>В конце страницы необходимо добавить заголовок "Мои приоритеты по изучению".</li>
                         <li>После заголовка добавить упорядоченный (нумерованный) список, где будет указана личная приоритетность изучения этих технологий.</li>
                     </ul>
                 </div>
@@ -661,7 +661,7 @@
             <p>Если обновить страницу и уменьшить окно экрана как показано ниже:</p>
             <img src="images/anchor-1.png" alt="Ссылка якорь (anchor)" />
             <p>
-                То после клика на ссылку <b>переход к приоритетам изучения</b> браузер прокрутит документ к заголовку, так чтобы он был виден, так же обновится URL в браузере &mdash; добавится хэш <b>#priorities</b>.
+                То после клика на ссылку <b>переход к приоритетам изучения</b> браузер прокрутит документ к заголовку, так чтобы он был виден, так же обновится URL в браузере &mdash;<br /> добавится хэш (символ решётки и текстовое значение после символа) <b>#priorities</b>.
             </p>
             <img src="images/anchor-2.png" alt="После клика на ссылку-якорь (anchor) браузер прокручивает документ к заголовку" />
             <h4>Изображения</h4>
@@ -695,7 +695,7 @@
                 <li><b>SVG</b> (произносится "as-vi-ji") &mdash; векторное изображение не теряющее качество при масштабировании (представляет собой текстовый XML-файл).</li>
                 <li><b>GIF</b> (произносится как “jif”) &mdash; растровые изображения с поддержкой пикселей с полной прозрачностью. Поддерживает палитру из 256 цветов. Может содержать покадровую анимацию.</li>
             </ul>
-            <p>Очень важно подготавливать и сжимать изображеня для веб. Изображения должны "весить" как можно меньше но без видимой потери качества. Особенно это критично для JPG, потом для PNG. В Photoshop-е есть встроенная функциональность <b>Save for Web</b> где можно используя различные настройки сохранить изображение в нужном формате и качестве.  Кроме того есть специальные утилиты и онлайн-сервисы (<a href="https://tinypng.com/">tinypng</a>, <a href="https://tinyjpg.com/">tinyjpg</a>, <a href="https://jakearchibald.github.io/svgomg/">SVGOmg</a>).</p>
+            <p>Очень важно подготавливать и сжимать изображения для веб. Изображения должны "весить" как можно меньше но без видимой потери качества. Особенно это критично для JPG, потом для PNG. В Photoshop-е есть встроенная функциональность <b>Save for Web</b> где можно используя различные настройки сохранить изображение в нужном формате и качестве.  Кроме того есть специальные утилиты и онлайн-сервисы (<a href="https://tinypng.com/">tinypng</a>, <a href="https://tinyjpg.com/">tinyjpg</a>, <a href="https://jakearchibald.github.io/svgomg/">SVGOmg</a>).</p>
             <h4>&lt;div&gt; и &lt;span&gt;</h4>
             <p>
                 Два не несущих смысла и наверное самых популярных тега. По умолчанию у них нет никаких стилей и они идеально работают вместе с CSS.
@@ -704,7 +704,10 @@
                 <li><b>div</b> &mdash; блочный элемент, которым можно разделять секции (использовался до появления семантических блоков повсеместно). Одним этим тегом можно сверстать весь сайт.</li>
                 <li><b>span</b> &mdash; строчный элемент для обозначения фрагмента текста.</li>
             </ul>
-            <p>Если добавить к элементам атрибуты <b>id</b> (уникальное название) и <b>class</b> (хранит название CSS-класса) и стили, и сделать разметку только этими двумя элементами, у вас получится сайт, однако делать этого всё же не стоит.</p>
+            <p>
+                Блочные элементы отличаются от строчных тем, что блочные по сути всегда занимают прямоугольную область, в то время как строчные &mdash; это часть текста который может переноситься на несколько строк и в итоге строчный элемент может выглядеть как несколько "ступенек".
+            </p>
+            <p>Если добавить к элементам атрибуты <b>id</b> (уникальное название) и <b>class</b> (хранит название CSS-класса) и стили, и сделать разметку только этими двумя элементами, у вас получится веб-страница, однако делать этого всё же не стоит.</p>
             <p data-height="357" data-theme-id="0" data-slug-hash="WGpzkV" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/WGpzkV/">div and span</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
         </section>
         <section>
@@ -804,7 +807,7 @@ a {
                     Необходимо перенести внутренние стили во внешний файл и добавить их к нашей странице.
                 </p>
                 <ol>
-                    <li>Создайте в той же папке где и HTML файл, новый файл с названием <b>style.css</b>.</li>
+                    <li>Создайте в той же папке где и HTML файл, новый файл с названием <b>styles.css</b>.</li>
                     <li>
                         Откройте файл <b>styles.css</b> в редакторе кода.
                     </li>
@@ -910,7 +913,7 @@ a {
                 <b>Синтаксис CSS:</b>
                 #уникальное_имя { стили }
             </blockquote>
-            <p data-height="265" data-theme-id="0" data-slug-hash="pEZLkg" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/pEZLkg/">id</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="300" data-theme-id="0" data-slug-hash="pEZLkg" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/pEZLkg/">id</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h3>Размеры</h3>
             <p>Чем можно задавать размеры в CSS:</p>
             <ul>
@@ -949,6 +952,10 @@ a {
                 <li><code class="css" style="color: #ff0000;">#ff0000</code></li>
                 <li><code class="css" style="color: #f00;">#f00</code></li>
             </ul>
+            <p>
+                Таблица с названием цветов &mdash; <a href="https://developer.mozilla.org/en/docs/Web/CSS/color_value#Color_keywords">https://developer.mozilla.org/en/docs/Web/CSS/color_value#Color_keywords</a>.
+            </p>
+            <p data-height="362" data-theme-id="0" data-slug-hash="Mpeejq" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="color" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/Mpeejq/">color</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h4>RGB формат</h4>
             <p>В RGB формате значения задаются от 0 до 255. Если первой цифрой идет 0 (минимальный уровень) значит в цвете нет красного, если 255 то это сто-процентное значение красного. Для зелёного и синего такой же диапазон значений &mdash; 0-255.</p>
             <h4>HEX формат</h4>
@@ -981,7 +988,7 @@ a {
                     </li>
                 </ol>
             </div>
-            <h3>Текст</h3>
+            <h3>Базовая веб-типографика</h3>
             <p>
                 В CSS есть возможность изменения размера и формы текста с помощью свойств относящихся к веб-типографике:
             </p>
@@ -1011,7 +1018,7 @@ a {
             <p data-height="137" data-theme-id="0" data-slug-hash="GjpKxN" data-default-tab="css,result" data-editable="true" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/GjpKxN/?editors=1100#">font-size</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
             <h5>line-height</h5>
-            <p><b>line-height</b> &mdash; задаёт высоту строки элемента без имзенения размера шрифта. Очень рекомендуется задавать это значение числом без размерных единиц, например <code class="css">line-height: 2</code> задаст высоту строки равную двум размерам шрифта. Так же можно задавать значение <b>normal</b>, которое задается по умолчанию.</p>
+            <p><b>line-height</b> &mdash; задаёт высоту строки элемента без изменения размера шрифта. <br /><b>Очень рекомендуется</b> задавать это значение числом без размерных единиц, <br />например <code class="css">line-height: 2</code> задаст высоту строки равную двум размерам шрифта. Так же можно задавать значение <b>normal</b>, которое задается по умолчанию.</p>
             <p data-height="167" data-theme-id="0" data-slug-hash="GjpKXA" data-default-tab="css,result" data-editable="true" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/GjpKXA/">line-height</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <p>Если текст переносится на другую строчку, то <b>line-height</b> так же является расстоянием между строками:</p>
             <p data-height="184" data-theme-id="0" data-slug-hash="LRpPXV" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/LRpPXV/">line-height multiline</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
@@ -1027,9 +1034,14 @@ a {
             <p>
                 Браузер использует шрифт который установлен на компьютере пользователя. Существует список "безопасных" шрифтов (Aria, Verdana, Times New Roman &mdash; это шрифты которые установлены практически на любых компьютерах.
             </p>
+            <blockquote>
+                <b>Список "безопасных" шрифтов</b>
+                <a href="http://www.cssfontstack.com/">CSS Font Stack</a>
+            </blockquote>
             <p>
                 Можно задавать через запятую несколько шрифтов, тогда браузер будет использовать первый если найдёт его на компьютере, если не найдёт первый будет использовать второй и так до последнего варианта. Поэтому самый распространенный вариант, когда указывается минимум три шрифта: <code class="css">font-family: arial, helvetica, sans-serif</code> &mdash; что соответствет шрифтам Arial, Helvetica, а так же если не найдены предыдущие два любой шрифт без засечек <b>sans-serif</b>.
             </p>
+            <p data-height="208" data-theme-id="0" data-slug-hash="zZBBEQ" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="font-family" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/zZBBEQ/">font-family</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h6>Типы шрифтов</h6>
             <p>В основном шрифты можно разделить на:</p>
             <ul>
@@ -1055,7 +1067,7 @@ a {
             <h4>CSS-свойства относящиеся к тексту</h4>
             <h5>text-align</h5>
             <p>Необходим для выравнивания текста (<b>left</b>, <b>right</b>, <b>center</b>, <b>justify</b>):</p>
-            <p data-height="279" data-theme-id="0" data-slug-hash="yaYoza" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/yaYoza/">text-align</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="450" data-theme-id="0" data-slug-hash="yaYoza" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/yaYoza/">text-align</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h5>text-decoration</h5>
             <p>
                 <b>text-decoration</b> &mdash; указывает должен ли текст быть подчёркнут, надчёркнут либо перечёркнут:
@@ -1066,7 +1078,7 @@ a {
                 <li><code class="css">text-decoration: line-through</code> &mdash; перечёркнутый текст</li>
             </ul>
             <p>Если задаётся <code class="css">text-decoration: none;</code> &mdash; отменяется любое подчёркивание.</p>
-            <p data-height="233" data-theme-id="0" data-slug-hash="YGyxZR" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a h ref="http://codepen.io/alekskorovin/pen/YGyxZR/">text-decoration</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="260" data-theme-id="0" data-slug-hash="YGyxZR" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a h ref="http://codepen.io/alekskorovin/pen/YGyxZR/">text-decoration</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h5>text-transform</h5>
             <p>
                 <b>text-transform</b> меняет регистр текста:
@@ -1077,7 +1089,7 @@ a {
                 <li><code class="css">text-transform: capitalize</code> &mdash; делает первую букву каждого слова большой.</li>
                 <li><code class="css">text-transform: none</code> &mdash; отменяет предыдущие изменения.</li>
             </ul>
-            <p data-height="204" data-theme-id="0" data-slug-hash="rrOYBo" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/rrOYBo/">text-transform</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="260" data-theme-id="0" data-slug-hash="rrOYBo" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/rrOYBo/">text-transform</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h4>CSS-свойства относящиеся к отступам в тексте</h4>
             <h5>letter-spacing</h5>
             <p>
@@ -1093,7 +1105,7 @@ a {
             <p>
                 <b>text-indent</b> &mdash; задаёт отступ слева для первой строки текста, по умолчанию это значение равно нулю. Этот отступ можно задавать в любых размерных единицах CSS. Для сброса предыдущих значений, используется <b>0</b>.
             </p>
-            <p data-height="326" data-theme-id="0" data-slug-hash="ALWbvk" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ALWbvk/">letter-spacing, word-spacing, text-indent</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="400" data-theme-id="0" data-slug-hash="ALWbvk" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ALWbvk/">letter-spacing, word-spacing, text-indent</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
             <p>
                 Для сброса предыдущих значений, используется <b>normal</b>.
@@ -1102,10 +1114,10 @@ a {
                 <h3>Задание</h3>
                 <ul>
                     <li>Отцентрировать все заголовки.</li>
-                    <li>Для абзацев задать отступ слева в 20px.</li>
-                    <li>Текст элементов списков сделать маленькими (строчными буквами).</li>
+                    <li>Для первой строки каждого абзаца задать отступ слева в 20px.</li>
+                    <li>Текст элементов списков сделать маленькими (строчными) буквами.</li>
                     <li>Убрать со ссылок подчёркивание и перекрасить в бардовый цвет (maroon).</li>
-                    <li>Заархивировать оба файла &mdash; <b>index.html</b> и <b></b> и Отправить страничку в Slack.</li>
+                    <li>Заархивировать оба файла &mdash; <b>index.html</b> и <b>styles.css</b> и отправить страничку в Slack (лично мне).</li>
                 </ul>
             </div>
             <div class="task">
